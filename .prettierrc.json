@@ -1,0 +1,37 @@
+{
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "tabWidth": 2,
+  "arrowParens": "always",
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": "*.ejs",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ],
+  "importOrder": [
+    "^nuxt$",
+    "^vue$",
+    "",
+    "<BUILTIN_MODULES>",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^(~/components|~/layouts|~/pages)(/.*)$",
+    "",
+    "^(~/composables|~/stores)(/.*)$",
+    "",
+    "^(~/utils|~/shared|~/lib)(/.*)$",
+    "",
+    "^[./]",
+    "^[.]",
+    "",
+    "<TYPES>",
+    "^(~/types)(/.*)$",
+    "",
+    ".css$"
+  ]
+}
